@@ -258,6 +258,20 @@
         // Embedded data to ensure it works without a server (file protocol)
         const models = [
             {
+                "name": "Miso TTS",
+                "params": "8B",
+                "size": "~16 GB",
+                "hz": "24k",
+                "voices": "0 + Clone",
+                "quality": "Excellent",
+                "platform": "Apple Silicon",
+                "use_case": "Highly expressive speech, low latency conversations",
+                "released": "Jun 2026",
+                "license": "MIT",
+                "link": "https://github.com/MisoLabsAI/MisoTTS",
+                "sample": "https://misolabs.ai"
+            },
+            {
                 "name": "Fish Speech",
                 "params": "500M",
                 "size": "~1.7 GB",
@@ -328,20 +342,6 @@
                 "sample": "https://microsoft.github.io/VibeVoice/"
             },
             {
-                "name": "Orpheus TTS",
-                "params": "150M-3B",
-                "size": "0.6-12 GB",
-                "hz": "24k",
-                "voices": "12 + Clone",
-                "quality": "Very Good",
-                "platform": "Local (CUDA)",
-                "use_case": "Emotional speech, low latency",
-                "released": "Mar 2025",
-                "license": "Apache 2.0",
-                "link": "https://github.com/canopyai/Orpheus-TTS",
-                "sample": "https://github.com/canopyai/Orpheus-TTS"
-            },
-            {
                 "name": "Dia",
                 "params": "1.6B",
                 "size": "~6 GB",
@@ -382,34 +382,6 @@
                 "license": "Apache 2.0",
                 "link": "https://github.com/SesameAILabs/csm",
                 "sample": "https://huggingface.co/spaces/sesame/csm-1b"
-            },
-            {
-                "name": "Kokoro",
-                "params": "82M",
-                "size": "350 MB",
-                "hz": "24k",
-                "voices": "10+ + Clone",
-                "quality": "Good",
-                "platform": "Apple Silicon / iOS",
-                "use_case": "Lightweight, fast inference",
-                "released": "Jan 2025",
-                "license": "Apache 2.0",
-                "link": "https://github.com/hexgrad/kokoro",
-                "sample": "https://huggingface.co/spaces/amphion/Kokoro-82M"
-            },
-            {
-                "name": "Sopro",
-                "params": "169M",
-                "size": "~650 MB",
-                "hz": "24k",
-                "voices": "0 + Clone",
-                "quality": "Good",
-                "platform": "Local (CUDA)",
-                "use_case": "Prototyping, voice cloning",
-                "released": "Nov 2024",
-                "license": "Apache 2.0",
-                "link": "https://github.com/samuel-vitorino/sopro",
-                "sample": "https://github.com/samuel-vitorino/sopro"
             },
             {
                 "name": "LuxTTS",
@@ -454,34 +426,6 @@
                 "sample": "https://funaudio.chat"
             },
             {
-                "name": "Pocket TTS",
-                "params": "Unknown",
-                "size": "Small",
-                "hz": "24k",
-                "voices": "Unknown",
-                "quality": "Good",
-                "platform": "Apple Silicon / iOS",
-                "use_case": "On-device CPU inference",
-                "released": "Jan 2026",
-                "license": "MIT",
-                "link": "https://github.com/kyutai-labs/pocket-tts",
-                "sample": "https://github.com/kyutai-labs/pocket-tts"
-            },
-            {
-                "name": "Miso TTS",
-                "params": "8B",
-                "size": "~16 GB",
-                "hz": "24k",
-                "voices": "0 + Clone",
-                "quality": "Excellent",
-                "platform": "Apple Silicon",
-                "use_case": "Highly expressive speech, low latency conversations",
-                "released": "Jun 2026",
-                "license": "MIT",
-                "link": "https://github.com/MisoLabsAI/MisoTTS",
-                "sample": "https://misolabs.ai"
-            },
-            {
                 "name": "mlx-audio",
                 "params": "82M-17B",
                 "size": "Varies",
@@ -494,6 +438,62 @@
                 "license": "MIT",
                 "link": "https://github.com/Blaizzy/mlx-audio",
                 "sample": "https://github.com/Blaizzy/mlx-audio"
+            },
+            {
+                "name": "Orpheus TTS",
+                "params": "150M-3B",
+                "size": "0.6-12 GB",
+                "hz": "24k",
+                "voices": "12 + Clone",
+                "quality": "Very Good",
+                "platform": "Local (CUDA)",
+                "use_case": "Emotional speech, low latency",
+                "released": "Mar 2025",
+                "license": "Apache 2.0",
+                "link": "https://github.com/canopyai/Orpheus-TTS",
+                "sample": "https://github.com/canopyai/Orpheus-TTS"
+            },
+            {
+                "name": "Kokoro",
+                "params": "82M",
+                "size": "350 MB",
+                "hz": "24k",
+                "voices": "10+ + Clone",
+                "quality": "Good",
+                "platform": "Apple Silicon / iOS",
+                "use_case": "Lightweight, fast inference",
+                "released": "Jan 2025",
+                "license": "Apache 2.0",
+                "link": "https://github.com/hexgrad/kokoro",
+                "sample": "https://huggingface.co/spaces/amphion/Kokoro-82M"
+            },
+            {
+                "name": "Sopro",
+                "params": "169M",
+                "size": "~650 MB",
+                "hz": "24k",
+                "voices": "0 + Clone",
+                "quality": "Good",
+                "platform": "Local (CUDA)",
+                "use_case": "Prototyping, voice cloning",
+                "released": "Nov 2024",
+                "license": "Apache 2.0",
+                "link": "https://github.com/samuel-vitorino/sopro",
+                "sample": "https://github.com/samuel-vitorino/sopro"
+            },
+            {
+                "name": "Pocket TTS",
+                "params": "Unknown",
+                "size": "Small",
+                "hz": "24k",
+                "voices": "Unknown",
+                "quality": "Good",
+                "platform": "Apple Silicon / iOS",
+                "use_case": "On-device CPU inference",
+                "released": "Jan 2026",
+                "license": "MIT",
+                "link": "https://github.com/kyutai-labs/pocket-tts",
+                "sample": "https://github.com/kyutai-labs/pocket-tts"
             }
         ];
 
