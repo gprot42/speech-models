@@ -141,6 +141,28 @@
             color: #fbbf24;
         }
 
+        .badge-platform-AppleSiliconiOS {
+            background: rgba(52, 211, 153, 0.15);
+            color: #34d399;
+        }
+
+        .badge-platform-AppleSilicon {
+            background: rgba(56, 189, 248, 0.15);
+            color: #38bdf8;
+        }
+
+        .badge-platform-LocalCUDA {
+            background: rgba(251, 146, 60, 0.15);
+            color: #fb923c;
+        }
+
+        .platform-badges {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+            margin-top: 0.4rem;
+        }
+
         .details {
             flex-grow: 1;
         }
@@ -216,6 +238,15 @@
                     <option value="asc">Ascending</option>
                 </select>
             </div>
+            <div class="control-group">
+                <label for="platform-filter">Platform:</label>
+                <select id="platform-filter">
+                    <option value="all">All</option>
+                    <option value="Apple Silicon / iOS">Apple Silicon / iOS</option>
+                    <option value="Apple Silicon">Apple Silicon</option>
+                    <option value="Local (CUDA)">Local (CUDA)</option>
+                </select>
+            </div>
         </div>
 
         <div id="grid" class="grid">
@@ -233,6 +264,7 @@
                 "hz": "44.1k",
                 "voices": "200k+ + Clone",
                 "quality": "Excellent",
+                "platform": "Local (CUDA)",
                 "use_case": "General TTS, voice cloning",
                 "released": "2024",
                 "license": "Apache 2.0",
@@ -246,6 +278,7 @@
                 "hz": "24k",
                 "voices": "0 + Clone",
                 "quality": "Excellent",
+                "platform": "Apple Silicon",
                 "use_case": "Voice cloning, emotion control",
                 "released": "May 2025",
                 "license": "MIT",
@@ -259,6 +292,7 @@
                 "hz": "24k",
                 "voices": "0 + Clone",
                 "quality": "Excellent",
+                "platform": "Local (CUDA)",
                 "use_case": "Voice cloning, Chinese/English",
                 "released": "2024",
                 "license": "Apache 2.0",
@@ -272,6 +306,7 @@
                 "hz": "24k",
                 "voices": "0 + Clone",
                 "quality": "Excellent",
+                "platform": "Local (CUDA)",
                 "use_case": "Zero-shot voice cloning",
                 "released": "Oct 2024",
                 "license": "MIT/CC-BY-NC",
@@ -285,6 +320,7 @@
                 "hz": "24k",
                 "voices": "4 + Clone",
                 "quality": "Excellent",
+                "platform": "Local (CUDA)",
                 "use_case": "Podcasts, audiobooks, multi-speaker",
                 "released": "Aug 2025",
                 "license": "MIT",
@@ -298,6 +334,7 @@
                 "hz": "24k",
                 "voices": "12 + Clone",
                 "quality": "Very Good",
+                "platform": "Local (CUDA)",
                 "use_case": "Emotional speech, low latency",
                 "released": "Mar 2025",
                 "license": "Apache 2.0",
@@ -311,6 +348,7 @@
                 "hz": "44.1k",
                 "voices": "2 + Clone",
                 "quality": "Excellent",
+                "platform": "Apple Silicon",
                 "use_case": "Dialogue, multi-speaker conversations",
                 "released": "Apr 2025",
                 "license": "Apache 2.0",
@@ -324,6 +362,7 @@
                 "hz": "24k",
                 "voices": "0 + Clone",
                 "quality": "Excellent",
+                "platform": "Local (CUDA)",
                 "use_case": "Full-duplex conversation, real-time",
                 "released": "Mar 2025",
                 "license": "MIT",
@@ -337,6 +376,7 @@
                 "hz": "24k",
                 "voices": "0 + Clone",
                 "quality": "Excellent",
+                "platform": "Apple Silicon",
                 "use_case": "Conversational, expressive speech",
                 "released": "Feb 2025",
                 "license": "Apache 2.0",
@@ -350,6 +390,7 @@
                 "hz": "24k",
                 "voices": "10+ + Clone",
                 "quality": "Good",
+                "platform": "Apple Silicon / iOS",
                 "use_case": "Lightweight, fast inference",
                 "released": "Jan 2025",
                 "license": "Apache 2.0",
@@ -363,6 +404,7 @@
                 "hz": "24k",
                 "voices": "0 + Clone",
                 "quality": "Good",
+                "platform": "Local (CUDA)",
                 "use_case": "Prototyping, voice cloning",
                 "released": "Nov 2024",
                 "license": "Apache 2.0",
@@ -376,6 +418,7 @@
                 "hz": "48k",
                 "voices": "0 + Clone",
                 "quality": "Excellent",
+                "platform": "Local (CUDA)",
                 "use_case": "High-speed voice cloning, real-time",
                 "released": "Jan 2026",
                 "license": "Apache 2.0",
@@ -384,14 +427,15 @@
             },
             {
                 "name": "Qwen3-TTS",
-                "params": "Unknown",
-                "size": "Unknown",
+                "params": "0.6B-1.7B",
+                "size": "~3-7 GB",
                 "hz": "24k",
                 "voices": "Design + Clone",
                 "quality": "Excellent",
+                "platform": "Apple Silicon",
                 "use_case": "Voice design, cloning, storytelling",
                 "released": "Dec 2025",
-                "license": "Unknown",
+                "license": "Apache 2.0",
                 "link": "https://huggingface.co/spaces/Qwen/Qwen3-TTS",
                 "sample": "https://huggingface.co/spaces/Qwen/Qwen3-TTS"
             },
@@ -402,6 +446,7 @@
                 "hz": "24k",
                 "voices": "0 + Clone",
                 "quality": "Excellent",
+                "platform": "Local (CUDA)",
                 "use_case": "Emotion-aware chat, voice assistants",
                 "released": "Dec 2025",
                 "license": "Apache 2.0",
@@ -415,6 +460,7 @@
                 "hz": "24k",
                 "voices": "Unknown",
                 "quality": "Good",
+                "platform": "Apple Silicon / iOS",
                 "use_case": "On-device CPU inference",
                 "released": "Jan 2026",
                 "license": "MIT",
@@ -428,11 +474,26 @@
                 "hz": "24k",
                 "voices": "0 + Clone",
                 "quality": "Excellent",
+                "platform": "Apple Silicon",
                 "use_case": "Highly expressive speech, low latency conversations",
                 "released": "Jun 2026",
                 "license": "MIT",
                 "link": "https://github.com/MisoLabsAI/MisoTTS",
                 "sample": "https://misolabs.ai"
+            },
+            {
+                "name": "mlx-audio",
+                "params": "82M-17B",
+                "size": "Varies",
+                "hz": "24k",
+                "voices": "Multi + Clone",
+                "quality": "Excellent",
+                "platform": "Apple Silicon / iOS",
+                "use_case": "TTS/STT/STS runtime for Apple Silicon — runs Kokoro, Qwen3-TTS, CSM, Dia, Chatterbox, Miso TTS & more natively on M-series Macs and iOS",
+                "released": "2024",
+                "license": "MIT",
+                "link": "https://github.com/Blaizzy/mlx-audio",
+                "sample": "https://github.com/Blaizzy/mlx-audio"
             }
         ];
 
@@ -475,12 +536,18 @@
         const container = document.getElementById('grid');
         const sortSelect = document.getElementById('sort-by');
         const orderSelect = document.getElementById('order');
+        const platformFilter = document.getElementById('platform-filter');
 
         function render() {
             const sortBy = sortSelect.value;
             const order = orderSelect.value === 'asc' ? 1 : -1;
+            const filterPlatform = platformFilter.value;
 
-            const sorted = [...models].sort((a, b) => {
+            let filtered = filterPlatform === 'all'
+                ? [...models]
+                : models.filter(m => m.platform === filterPlatform);
+
+            const sorted = filtered.sort((a, b) => {
                 let valA, valB;
 
                 if (sortBy === 'quality') {
@@ -508,7 +575,12 @@
             container.innerHTML = sorted.map(model => `
                 <div class="card">
                     <div class="card-header">
-                        <div class="model-name">${model.name}</div>
+                        <div>
+                            <div class="model-name">${model.name}</div>
+                            <div class="platform-badges">
+                                <span class="badge badge-platform-${(model.platform || '').replace(/[\s\/\(\)]/g, '')}">${model.platform}</span>
+                            </div>
+                        </div>
                         <div class="badge badge-quality-${model.quality.replace(/\s+/g, '')}">${model.quality}</div>
                     </div>
                     <div class="details">
@@ -548,6 +620,7 @@
 
         sortSelect.addEventListener('change', render);
         orderSelect.addEventListener('change', render);
+        platformFilter.addEventListener('change', render);
 
         // Initial render
         render();
