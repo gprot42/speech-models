@@ -37,7 +37,7 @@ A comparison of text-to-speech and translation models, with a [Sopro demo implem
 | **OpenAI GPT-4o-mini-tts** | 4+ | Excellent | Expressive narration, assistants | $0.015/min | [Docs](https://platform.openai.com/docs/models/gpt-4o-mini-tts) |
 | **OpenAI TTS** | 6 | Excellent | General TTS, apps | $15/1M chars | [Docs](https://platform.openai.com/docs/guides/text-to-speech) |
 | **ElevenLabs** | 1000+ | Excellent | Voice cloning, dubbing | Free tier + paid | [Website](https://elevenlabs.io/) |
-| **xAI Grok Voice** | N/A | Very Good | Real-time conversations | $0.05/min | [Docs](https://docs.x.ai/docs/guides/voice) |
+| **xAI Grok Voice** | 5 + Clone | Excellent | Real-time conversations, TTS, STT | $0.05/min | [Docs](https://docs.x.ai/docs/guides/voice) |
 | **Google Cloud TTS** | 220+ | Good | Multilingual apps | Pay per use | [Docs](https://cloud.google.com/text-to-speech) |
 | **Amazon Polly** | 60+ | Good | IVR, accessibility | Pay per use | [Docs](https://aws.amazon.com/polly/) |
 | **Azure TTS** | 400+ | Good | Enterprise, multilingual | Pay per use | [Docs](https://azure.microsoft.com/en-us/products/ai-services/text-to-speech) |
