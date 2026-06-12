@@ -12,6 +12,7 @@ A comparison of text-to-speech and translation models, with a [Sopro demo implem
 
 | Model | Params | Size | Hz | Platform | Voices | Quality | Use Case | Released | License | Link |
 |-------|--------|------|-----|----------|--------|---------|----------|----------|---------|------|
+| **ZONOS2** | MoE | Unknown | 44.1k | 🟠 Local (CUDA) | 0 + Clone | Excellent | Expressive TTS, high-fidelity voice cloning, multilingual (10 languages) | Jun 2026 | Apache 2.0 | [Listen 🎵](https://cloud.zyphra.com/audio-playground) \| [GitHub](https://github.com/Zyphra/Zonos2) |
 | **Miso TTS** | 8B | ~16 GB | 24k | 🔵 Apple Silicon | 0 + Clone | Excellent | Highly expressive speech, low latency conversations | Jun 2026 | MIT | [Listen 🎵](https://misolabs.ai) \| [GitHub](https://github.com/MisoLabsAI/MisoTTS) |
 | **Fish Speech** | 500M | ~1.7 GB | 44.1k | 🟠 Local (CUDA) | 200k+ + Clone | Excellent | General TTS, voice cloning | 2024 | Apache 2.0 | [Listen 🎵](https://speech.fish.audio/samples/) \| [GitHub](https://github.com/fishaudio/fish-speech) |
 | **Chatterbox** | 350M | ~1.5 GB | 24k | 🔵 Apple Silicon | 0 + Clone | Excellent | Voice cloning, emotion control | May 2025 | MIT | [Listen 🎵](https://www.resemble.ai/chatterbox/) \| [GitHub](https://github.com/resemble-ai/chatterbox) |
